@@ -1,0 +1,93 @@
+.button {
+    background: #F3F3F3;
+}
+.head {
+    display: flex;
+}
+
+.head > a img {
+    height: 100%;
+}
+.nazad-button {
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.nazad-button a {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.nazad-button:hover {
+    transform: scale(1.1);
+    background: #b1b1b1;
+}
+
+.title {
+    align-self: center;
+    font-size: 30px;
+}
+
+.prod {
+    position: relative;
+    height: 50vh;
+    width: 80vw;
+    background: #9A1212;
+    border-radius: 60px;
+    align-self: center;
+    display: flex;
+    z-index: 99;
+}
+
+.prod img {
+    height: 100%;
+    border-radius: 60px;
+}
+
+.prod p {
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.sheet3 {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 700px){
+    .head > a, .sheet3{
+        display: none;
+    }
+    .prod {
+        width: 90vw;
+    }
+    .prod p {
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .prod {
+        width: 98vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 15px;
+    }
+    .prod p {
+        font-size: 14px;
+        padding-right: 0px;
+    }
+}

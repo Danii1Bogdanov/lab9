@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+* {
+    font-family: 'Jost', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont-115vh {
+    position: relative;
+    width: 100%;
+    height: 115vh;
+    background: #9A1212;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container-85 {
+    width: 100%;
+    height: 85vh;
+}
+
+.bg-kepchup {
+    position: absolute;
+    height: 80vh;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    align-self: end;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+    padding: 40px 45px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li:nth-child(2) {
+    margin: 0 30px;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.button img {
+    margin-left: 5px;
+}
+
+.button a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #78ff66;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.vkusno, .opisanie {
+    position: relative;
+    align-self: flex-end;
+    padding: 0 45px;
+    max-width: 750px;
+    color: white;
+    font-size: 23px;
+    z-index: 99;
+    text-align: right;
+}
+
+.vkusno {font-size: 70px;}
+
+.niz-button {
+    width: 100%;
+    padding: 60px 45px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+}
+
+.news {
+    font-size: 100px;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 230px;
+    z-index: 99;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+footer p {
+    position: relative;
+    z-index: 99;
+}
+
+.products {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+.products > img {
+    height: 45px;
+}
+
+.products > * {
+    margin: 0 40px;
+}
+
+.product {
+    height: 300px;
+    width: 230px;
+    transition: transform .2s;
+}
+
+.product a {
+    min-height: 100%;
+    min-width: 100%;
+    color: #9A1212;
+    font-size: 23px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+.product a img {
+    min-width: 100%;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+.sheet1, .sheet2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+}
+
+.sheet1 {right: 200px;}
+
+@media screen and (max-height: 800px){
+    .news {
+        font-size: 80px;
+    }
+    .sheet1 {
+        right: 400px;
+    }
+    .sheet2 {
+        right: 300px;
+    }
+    .product {
+        height: 380px;
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bg-kepchup {
+        height: 70%;
+    }
+    .news {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .bg-kepchup {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .vkusno, .opisanie {
+        align-self: center;
+        padding: 0;
+        text-align: center;
+    }
+    .niz-button {
+        justify-content: center;
+    }
+    .products {
+        align-self: center;
+    }
+    .products > * {
+        margin: 0 30px;
+    }
+    
+    .product {
+        height: 200px;
+        width: 150px;
+        transition: transform .2s;
+    }
+    .news {
+        align-self: center;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .product:nth-child(3) {
+        display: none;
+    }
+    .sheet1, .sheet2 {
+        display: none;
+    }
+    .news {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .product:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        height: 30px;
+        width: 100px;
+    }
+    .vkusno {
+        font-size: 40px;
+    }
+    .opisanie {
+        font-size: 16px;
+    }
+    .news {
+        font-size: 40px;
+    }
+    .products > * {
+        margin: 0 10px;
+    }
+
+    ul li:nth-child(2) {
+        margin: 0 10px;
+    }
+}
